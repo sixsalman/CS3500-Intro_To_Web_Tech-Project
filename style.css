@@ -1,9 +1,13 @@
+html {
+  scroll-padding-top: 169px;
+}
+
 * {
 	box-sizing: border-box;
 }
 
 body {
-	min-width: 970px;
+	min-width: 992px;
 	margin: 0px;
 	font-family: Nunito, Calibri, sans-serif;
 }
@@ -131,6 +135,7 @@ main nav {
 	top: 171px;
 	border-radius: 15px 15px 0px 0px;
 	float: left;
+	min-width: 155px;
 	width: 15%;
 	margin: 0px;
 	margin-right: 15px;
@@ -159,11 +164,6 @@ main .notNav {
 	margin-top: 10px;
 }
 
-.anchor {
-    position: relative;
-    top: -169px;
-}
-
 section#aboutUs {
 	column-count: auto;
 	column-rule: solid 1px goldenrod;
@@ -182,8 +182,6 @@ section#aboutUs p {
 
 
 #contTimeBox {
-	/*position: relative;
-	margin-bottom: 200px;*/
 	margin-top: 30px;
 	display: flex;
 	justify-content: space-between;
@@ -197,26 +195,9 @@ section#aboutUs p {
 	text-align: right;
 }
 
-/*#cont {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-}
-
-#time {
-	position: absolute;
-	right: 0px;
-	top: 0px;
-	text-align: right;
-}*/
-
 dl {
 	margin: 0px;
 	padding: 0px;
-}
-
-#catalogBody main nav {
-	min-width: 100px;
 }
 
 #catalogBody main .notNav {
@@ -224,8 +205,20 @@ dl {
 }
 
 #catalogBody main .notNav .cat {
-	column-width: 300px;
+	column-count: 2;
 	column-gap: 15px;
+}
+
+#catalogBody .topsCol {
+	break-inside: avoid;
+}
+
+#catalogBody .topsCol .product {
+	margin-bottom: 15px;
+}
+
+#catalogBody .topsCol .product:last-child {
+	margin-bottom: 0px;
 }
 
 #catalogBody main hr {
@@ -252,13 +245,8 @@ div.product {
 	border-radius: 15px; 
 	break-inside: avoid;
 	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-	margin-bottom: 15px;
 	padding: 5px;
 	transition: 0.3s;
-}
-
-div.product:last-child {
-	margin-bottom: 0px;
 }
 
 div.product:hover {
@@ -399,12 +387,9 @@ input[type="submit"]:hover {
 	border: solid 1px darkgoldenrod;
 }
 
-#aboutBody main nav {
-	min-width: 130px;
-}
-
 #aboutBody main .notNav {
 	column-count: 1;
+	text-align: justify;
 }
 
 img#myPic {
@@ -432,7 +417,7 @@ audio {
 }
 
 .marginTop {
-	margin-top: 40px;
+	margin-top: 74px; /* changed from 40 to fix ios audio player overlap issue*/
 }
 
 .marginLeft {
