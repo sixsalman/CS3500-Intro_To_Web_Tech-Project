@@ -204,7 +204,7 @@ dl {
 	column-count: 1;
 }
 
-#catalogBody main .notNav .cat {
+#catalogBody section {
 	column-count: 2;
 	column-gap: 15px;
 }
@@ -219,10 +219,6 @@ dl {
 
 #catalogBody .topsCol .product:last-child {
 	margin-bottom: 0px;
-}
-
-#catalogBody main hr {
-	margin: 15px 0px 15px 0px;
 }
 
 dt {
@@ -416,7 +412,7 @@ audio {
 }
 
 .marginTop {
-	margin-top: 74px; /* changed from 40 to fix ios audio player overlap issue*/
+	margin-top: 74px;
 }
 
 .marginLeft {
