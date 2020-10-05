@@ -197,27 +197,26 @@ section#aboutUs p {
 
 dl {
 	margin: 0px;
-	padding: 0px;
 }
 
 #catalogBody main .notNav {
 	column-count: 1;
 }
 
-#catalogBody section {
+#tops, #tops ~ dl {
 	column-count: 2;
 	column-gap: 15px;
 }
 
-#catalogBody .topsCol {
+#catalogBody dl.topsCol {
 	break-inside: avoid;
 }
 
-#catalogBody .topsCol .product {
+#catalogBody dl.topsCol .product {
 	margin-bottom: 15px;
 }
 
-#catalogBody .topsCol .product:last-child {
+#catalogBody dl.topsCol .product:last-child {
 	margin-bottom: 0px;
 }
 
@@ -398,6 +397,7 @@ audio {
 
 #WMUVid {
 	outline: none;
+	border: none;
 	width: 700px;
 	height: 393.75px;
 	border-radius: 15px;
