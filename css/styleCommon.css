@@ -8,6 +8,7 @@ body, textarea, input[type="submit"] {
 
 body {
 	margin: 0px;
+	min-width: 300px;
 }
 
 #indexBody {

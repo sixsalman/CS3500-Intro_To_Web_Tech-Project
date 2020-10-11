@@ -59,7 +59,7 @@ main nav {
 }
 
 @media only screen and (max-width:575px) {
-	#catalogBody .product {
+	#catalogBody .product, dl.topsCol:first-child {
 		margin-bottom: 15px;
 	}
 
