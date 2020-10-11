@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 	<title>Our Products - The Closet</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="css/styleCommon.css">
+	<link rel="stylesheet" type="text/css" href="css/style768AndAbove.css" media="screen and (min-width:768px)">
+	<link rel="stylesheet" type="text/css" href="css/styleBelow768.css" media="screen and (max-width:767px)">
 	<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap" rel="stylesheet">
 </head>
 <body id="catalogBody">
 	<div id="aboveFooter">
 	<header>
-		<a href="index.html" title="Home page"><h1 class="center">The Closet</h1></a>
+		<a href="index.html" title="Home page"><h1>The Closet</h1></a>
 		<hr>
 		<nav>
-			<ul>
+			<div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headNav">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>                        
+		      </button>
+		    </div>
+		    <div class="collapse navbar-collapse" id="headNav">
+			<ul class="nav">
 			<li><a href="#"><b>Our Products</b></a></li>
 			<li><a href="deals.html">Deals</a></li>
 			<li><a href="rateUs.html">Rate Us</a></li>
 			<li><a href="about.html">About Website</a></li>
 			</ul>
+			</div>
 		</nav>
 	</header>
 

@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 	<title>About Website - The Closet</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="css/styleCommon.css">
+	<link rel="stylesheet" type="text/css" href="css/style768AndAbove.css" media="screen and (min-width:768px)">
+	<link rel="stylesheet" type="text/css" href="css/styleBelow768.css" media="screen and (max-width:767px)">
 	<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap" rel="stylesheet">
 </head>
 <body id="aboutBody">
 	<div id="aboveFooter">
 	<header>
-		<a href="index.html" title="Home page"><h1 class="center">The Closet</h1></a>
+		<a href="index.html" title="Home page"><h1>The Closet</h1></a>
 		<hr>
 		<nav>
-			<ul>
+			<div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headNav">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>                        
+		      </button>
+		    </div>
+		    <div class="collapse navbar-collapse" id="headNav">
+			<ul class="nav">
 			<li><a href="catalog.html">Our Products</a></li>
 			<li><a href="deals.html">Deals</a></li>
 			<li><a href="rateUs.html">Rate Us</a></li>
 			<li><a href="#"><b>About Website</b></a></li>
 			</ul>
+			</div>
 		</nav>
 	</header>
 
@@ -34,15 +48,15 @@
 		<div class="notNav">
 		<div id="creatorInfo">
 		<img src="images/creator.jpg" alt="Creator's Pic" title="Creator's Pic" id="myPic">
-		<p><b>Creator's Name</b>: <a href="documents/MuhammadSalmanKhan-Resume.pdf" target="_blank" title="Salman's Resume">Salman Khan</a></p>
-		<p><b>Project Team Number</b>: Not yet assigned</p>
+		<p><b>Creator's Name</b>: Salman Khan</p>
+		<p><b>Project Team Number</b>: 19</p>
 		</div>
 		<section id="description">
 		<h2 class="marginTop">Project Description</h2>
-		<p>For this project, I chose to work alone on a Fictional Company's Website. My fictional company is called 'The Closet' and a has clothing store in Kalamazoo. This website has 5 pages.</p>
-		<p>My website's homepage (index.html) tells visitors about this store and gives them two links to contact the store: phone and email. The page also shows store's timmings.</p>
-		<p>'Our products' page (catalog.html) lists (using &lt;dl&gt;) the items sold at store along with descriptions and costs.</p>
-		<p>'Deals' page (deals.html) uses a table to list the promotions currently being offered by the store.</p>
+		<p>For this project, I chose to work alone on a Fictional Company's Website. My fictional company is called 'The Closet' and has a clothing store in Kalamazoo. This website has 5 pages.</p>
+		<p>My website's homepage (index.html) has a bootstrap carousel, tells visitors about this store and gives them two links to contact the store: phone and email. The page also shows store's timings.</p>
+		<p>'Our products' page (catalog.html) lists (using &lt;dl&gt;) the items sold at the store along with descriptions and costs.</p>
+		<p>'Deals' page (deals.html) uses a table to list the promotions currently being offered by the store. It also uses animations to animate entries in first column.</p>
 		<p>'Rate Us' page uses a form that allows visitors to rate 'The Closet' store. The form's action attribute has currently been assigned the example link which was used in lecture.</p>
 		<p>And, this page (about.html) tells about me and this project. It also contains an audio and a YouTube video.</p>
 		</section>
@@ -54,7 +68,9 @@
 		<section id="video">
 		<h2 class="marginTop">A Video</h2>
 		<p>This is campus of the university where I learnt how to develop webpages.</p>
+		<div class="videoWrap">
 		<iframe id="WMUVid" src="https://www.youtube-nocookie.com/embed/ehjyDsg-qLU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 		</section>
 		</div>
 	</main>

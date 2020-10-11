@@ -1,0 +1,361 @@
+* {
+	box-sizing: border-box;
+}
+
+body, textarea, input[type="submit"] {
+	font-family: Nunito, Calibri, sans-serif;
+}
+
+body {
+	margin: 0px;
+}
+
+#indexBody {
+	background: url(../images/background.jpg) repeat;
+	background-size: 100%;
+}
+
+#catalogBody {
+	background: url(../images/background2.jpg) repeat;
+	background-size: 100%;
+}
+
+#dealsBody {
+	background: url(../images/background3.jpg) repeat;
+	background-size: 100%;
+}
+
+#rateUsBody {
+	background: url(../images/background4.jpg) repeat;
+	background-size: 100%;
+}
+
+#aboutBody {
+	background: url(../images/background5.jpg) repeat;
+	background-size: 100%;
+}
+
+h1 {
+	color: darkgoldenrod;
+	text-shadow: 0px 0px 2px darkgrey;
+	font-family: Satisfy, SignPainter, sans-serif;
+	font-size: 56px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 0px 0px 15px 15px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	z-index: 2;
+}
+
+header ul.nav a:hover, ul.nav a:link {
+	background-color: rgba(0,0,0,0);
+}
+
+#aboveFooter {
+	min-height: calc(100vh - 51px);
+}
+
+footer {
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 15px 15px 0px 0px;
+	padding: 10px;
+}
+
+footer p {
+	margin: 0px;
+}
+
+h2, dt, .deal, legend, thead th, input[type="number"], input[type="submit"] {
+	color: firebrick;
+}
+
+h3, .inLine {
+	display: inline;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+#indexBody h3, label, input[type="submit"] {
+	font-size: 24px;
+}
+
+nav, p, main a, tbody, input, textarea {
+	font-size: 22px;
+}
+
+dt, .deal, thead th, legend, label, input[type="submit"] {
+	font-weight: bold;
+}
+
+a {
+	outline-color: goldenrod;
+	transition: color 0.3s;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: indianred;
+}
+
+a:hover, input[type="submit"]:hover {
+	color: goldenrod;
+}
+
+a:active, input[type="submit"]:active {
+	color: darkgoldenrod;
+}
+
+main {
+	border-radius: 15px;
+	background-color: rgba(255,255,255,0.9);
+}
+
+.carousel {
+	overflow: hidden;
+}
+
+.carouselImg {
+	min-width: 100%;
+	min-height: 300px;
+	border-radius: 15px 15px 0px 0px;
+}
+
+.carousel-indicators {
+	filter: brightness(15%);
+	z-index: 1;
+}
+
+section#aboutUs {
+	column-count: auto;
+	column-rule: solid 1px goldenrod;
+	column-gap: 60px;
+	column-width: 450px;
+}
+
+section#aboutUs h2 {
+	column-span: all;
+}
+
+section#aboutUs p {
+	margin-top: 0px;
+	text-align: justify;
+}
+
+
+#contTimeBox p {
+	white-space: nowrap;
+}
+
+#contTimeBox h2 {
+	font-size: 28px;
+}
+
+#time {
+	text-align: right;
+}
+
+dl {
+	margin: 0px;
+}
+
+dt {
+	font-size: 48px;
+}
+
+dd {
+	margin: 0px;
+	font-size: 24px;
+}
+
+div.product, dd {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+div.product {
+	background-color: white;
+	border-radius: 15px; 
+	break-inside: avoid;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+	padding: 5px;
+	transition: box-shadow 0.3s;
+}
+
+div.product:hover {
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+div.product a {
+	position: relative;
+	float: left;
+	height: 200px;
+	min-width: 200px;
+	margin: 5px 0px 5px 0px;
+}
+
+div.product img {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	margin: auto;
+	max-height: 200px;
+	max-width: 200px;
+}
+
+span.cost {
+	width: calc(100% + 10px);
+	background-color: goldenrod;
+	color: white;
+	margin: 5px -5px -5px -5px;
+	border-radius: 0px 0px 15px 15px;
+	padding: 5px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.deal {
+	font-size: 36px;
+	animation: dealAnim 1s ease 0s infinite alternate;
+}
+
+@keyframes dealAnim {
+	to {
+		text-shadow: -0.5px 0.5px 2px goldenrod;
+	}
+}
+
+td, th {
+	padding: 12px;
+	text-align: center;
+}
+
+thead th {
+	font-size: 28px;
+	padding-top: 0px;
+	padding-bottom: 6px;
+}
+
+thead th, [rowspan], tr.bBorder {
+	border-bottom: solid 2px goldenrod;
+}
+
+thead th:first-child {
+	border-bottom: none;
+}
+
+[rowspan].lastSpans {
+	border-bottom: none;
+}
+
+input, textarea {
+	background-color: transparent;
+	margin-bottom: 10px;
+}
+
+fieldset {
+	border: solid 2px goldenrod;
+	border-radius: 15px;
+}
+
+legend {
+	width: auto;
+	border: none;
+	font-size: 28px;
+	margin-bottom: 20px;
+	padding: 0px 5px 0px 5px; 
+}
+
+input[type="number"] {
+	border: solid 1px transparent;
+	padding: 5px 8px;
+	width: 85px;
+	text-align: center;
+	border-radius: 10px;
+	transition: border 0.3s;
+}
+
+input[type="number"]:hover {
+	border: solid 1px darkgrey;
+}
+
+input[type="number"]:focus {
+	border: solid 1px goldenrod;
+}
+
+textarea {
+	border-radius: 15px;
+	padding: 5px 15px;
+	height: 100px;
+	min-height: 100px;
+	max-height: 500px;
+	resize: vertical;
+	margin-top: 5px;
+	transition: width 0.2s, border 0.2s;
+}
+
+textarea:focus {
+	border: solid 1px goldenrod;
+}
+
+input[type="submit"] {
+	border-radius: 15px;
+	border: solid 1px transparent;
+	margin-bottom: 0px;
+	margin-top: 5px;
+	text-align: center;
+	transition:  color 0.3s, border 0.3s;
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+	border: solid 1px darkgoldenrod;
+}
+
+img#myPic {
+	width: 180px; 
+	border-radius: 15px 15px 0px 0px;
+	margin-bottom: 20px;
+}
+
+#WMUVid {
+	border: none;
+	border-radius: 15px;
+}
+
+input[type="number"]:hover, input[type="number"]:focus, textarea:focus, input[type="submit"], audio, #WMUVid {
+ 	outline: none;
+ }
+
+.inLineBlock {
+	display: inline-block;
+}
+
+.marginTop {
+	margin-top: 40px;
+}
+
+.allignTop {
+	vertical-align: text-top;
+}
+
+.center {
+	text-align: center;
+}
+
+h3+p {
+	margin-top: 0px;
+}
