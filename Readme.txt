@@ -1,4 +1,4 @@
-Website Link: [a link](http://thecloset.myartsonline.com/)
+Website Link: http://thecloset.myartsonline.com/
 
 'Final Project Prompt'
 
