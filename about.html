@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>About Website - The Closet</title>
+	<title>About Website | The Closet</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -14,67 +14,70 @@
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap" rel="stylesheet">
 </head>
 <body id="aboutBody">
-	<div id="aboveFooter">
-	<header>
-		<a href="index.html" title="Home Page"><h1>The Closet</h1></a>
-		<hr>
-		<nav>
-			<div class="navbar-header">
-		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headNav">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>                        
-		      </button>
-		    </div>
-		    <div class="collapse navbar-collapse" id="headNav">
-			<ul class="nav">
-			<li><a href="catalog.html">Our Products</a></li>
-			<li><a href="deals.html">Deals</a></li>
-			<li><a href="rateUs.html">Rate Us</a></li>
-			<li><a href="#"><b>About Website</b></a></li>
-			</ul>
-			</div>
-		</nav>
-	</header>
+	<div class="aboveFooter">
+		<header>
+			<a href="./" title="Home Page"><h1>The Closet</h1></a>
+			<hr>
+			<nav>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headNav">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+			    </div>
+			    <div class="collapse navbar-collapse" id="headNav">
+					<ul class="nav">
+						<li><a href="php/catalog.php">Our Products</a></li>
+						<li><a href="deals.html">Deals</a></li>
+						<li><a href="rateUs.html">Rate Us</a></li>
+						<li><a href="forStaff.html">For Staff</a></li>
+						<li><a href=""><b>About Website</b></a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
 
-	<main>
-		<nav>
-		<ul>
-		<li><a href="#creatorInfo">Creator's Info</a></li>
-		<li><a href="#description">Project Description</a></li>
-		<li><a href="#audio">An Audio Track</a></li>
-		<li><a href="#video">A Video</a></li>
-		</ul>
-		</nav>
-		<div class="notNav">
-		<div id="creatorInfo">
-		<img src="images/creator.jpg" alt="Creator's Pic" title="Creator's Pic" id="myPic">
-		<p><b>Creator's Name</b>: Salman Khan</p>
-		<p><b>Project Team Number</b>: 19</p>
-		</div>
-		<section id="description">
-		<h2 class="marginTop">Project Description</h2>
-		<p>For this project, I chose to work alone on a Fictional Company's Website. My fictional company is called 'The Closet' and has a clothing store in Kalamazoo. This website has 5 pages.</p>
-		<p>My website's homepage (index.html) has a bootstrap carousel, tells visitors about this store and gives them two links to contact the store: phone and email. The page also shows store's timings.</p>
-		<p>'Our products' page (catalog.html) lists (using &lt;dl&gt;) the items sold at the store along with descriptions and costs.</p>
-		<p>'Deals' page (deals.html) uses a table to list the promotions currently being offered by the store. It also uses animations to animate entries in first column.</p>
-		<p>'Rate Us' page uses a form that allows visitors to rate 'The Closet' store. The form's action attribute has currently been assigned the example link which was used in lecture.</p>
-		<p>And, this page (about.html) tells about me and this project. It also contains an audio and a YouTube video.</p>
-		</section>
-		<section id="audio">
-		<h2 class="marginTop">An Audio Track</h2>
-		<p>This is one of the tracks I listened to while working on this website.</p>
-		<audio src="media/InterstellarThemeMusic-IndianJamProject.mp3" controls></audio>
-		</section>
-		<section id="video">
-		<h2 class="marginTop">A Video</h2>
-		<p>This is campus of the university where I learnt how to develop webpages.</p>
-		<div class="videoWrap">
-		<iframe id="WMUVid" src="https://www.youtube-nocookie.com/embed/ehjyDsg-qLU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-		</section>
-		</div>
-	</main>
+		<main>
+			<nav>
+				<ul>
+					<li><a href="#creatorInfo">Creator's Info</a></li>
+					<li><a href="#description">Project Description</a></li>
+					<li><a href="#audio">An Audio Track</a></li>
+					<li><a href="#video">A Video</a></li>
+				</ul>
+			</nav>
+			<div class="notNav">
+				<div id="creatorInfo">
+					<img src="images/creator.jpg" alt="Creator's Pic" title="Creator's Pic" id="myPic">
+					<p><b>Creator's Name</b>: Salman Khan</p>
+					<p><b>Project Team Number</b>: 19</p>
+				</div>
+				<section id="description">
+					<h2 class="marginTop">Project Description</h2>
+					<p>For this project, I chose to work alone on a Fictional Company's Website. My fictional company is called 'The Closet' and has a clothing store in Kalamazoo. This website has 7 viewable pages.</p>
+					<p>My website's homepage (index.php) has a bootstrap carousel, tells visitors about this store and gives them two links to contact the store: phone and email. The page also shows store's timings and a Google Map centered at Kalamazoo since the store's address is fictional.</p>
+					<p>'Our products' page (catalog.php) lists (using &lt;dl&gt;) the items sold at the store along with descriptions and costs. All the displayed content is obtained directly from database using a PDO object and SQL code. Animations and events have also been used to magnify images as users hover over them.</p>
+					<p>'Deals' page (deals.html) uses a table to list the promotions currently being offered by the store. It also uses animations to animate entries in the first column.</p>
+					<p>'Rate Us' page uses a form that allows visitors to rate 'The Closet' store. For comments, I've limited the number of characters to 280 and have added a character count underneath the textbox which changes with every key press and changes color to red when user has 50 or less characters left. The form's action attribute leads to a PHP page (ratingSubmit.php) which stores the user's responses in database and notifies the user accordingly.</p>
+					<p>'For Staff' page allows employees of the store to check inventory status of individual products. To do so, employees key in their ID and Password. I'm using 'keyup' event to monitor inputs and so no button needs to clicked to log in; as soon as the user keys in the right combination, he/she is greeted with the name associated with the entered id and is shown another text box in which he/she can enter a product's title to know its 'Stock Status'. I've also given users the option to change their passwords and am using md5 and unique seeds to store them. All of the prior three are achieved using AJAX and so the page never reloads or redirects. I've also utilized jQuery's sliding animations on this page.</p>
+					<p>And, this page (about.html) tells about me and this project. It also contains an embedded SoundCloud audio and an embedded YouTube video.</p>
+					<p>I decided to upload my project to 'AwardSpace'. My website's link is <a href="http://thecloset.myartsonline.com/" target="_blank">http://thecloset.myartsonline.com/</a>.</p>
+				</section>
+				<section id="audio">
+					<h2 class="marginTop">An Audio Track</h2>
+					<p>This is one of the tracks I listened to while working on this website.</p>
+					<iframe id="soundTrack" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221774895&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+				</section>
+				<section id="video">
+					<h2 class="marginTop">A Video</h2>
+					<p>This is campus of the university where I learnt how to develop webpages.</p>
+					<div class="videoWrap">
+						<iframe id="WMUVid" src="https://www.youtube-nocookie.com/embed/ehjyDsg-qLU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</section>
+			</div>
+		</main>
 	</div>
 
 	<footer>

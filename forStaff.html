@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Rate Us | The Closet</title>
+	<title>For Staff | The Closet</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -13,7 +13,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap" rel="stylesheet">
 </head>
-<body id="rateUsBody">
+<body id="stockInfoBody">
 	<div class="aboveFooter">
 		<header>
 			<a href="./" title="Home Page"><h1>The Closet</h1></a>
@@ -30,8 +30,8 @@
 					<ul class="nav">
 						<li><a href="php/catalog.php">Our Products</a></li>
 						<li><a href="deals.html">Deals</a></li>
-						<li><a href=""><b>Rate Us</b></a></li>
-						<li><a href="forStaff.html">For Staff</a></li>
+						<li><a href="rateUs.html">Rate Us</a></li>
+						<li><a href=""><b>For Staff</b></a></li>
 						<li><a href="about.html">About Website</a></li>
 					</ul>
 				</div>
@@ -39,30 +39,23 @@
 		</header>
 
 		<main>
-			<form method="post" action="php/ratingSubmit.php">
-				<fieldset>
-					<legend>How Are We Doing?</legend>
-					<label for="overall">Overall: </label>
-					<input id="overall" type="number" min="1" max="10" placeholder="1-10" name="overall">
-					<br>
-					<label for="fabricQuality">Fabric Quality: </label>
-					<input id="fabricQuality" type="number" min="1" max="10" placeholder="1-10" name="fabricQuality">
-					<br>
-					<label for="stitchQuality">Stitch Quality: </label>
-					<input id="stitchQuality" type="number" min="1" max="10" placeholder="1-10" name="stitchQuality">
-					<br>
-					<label for="staff">Staff Hospitality: </label>
-					<input id="staff" type="number" min="1" max="10" placeholder="1-10" name="staff">
-					<br>
-					<label for="cleanliness">Store Cleanliness: </label>
-					<input id="cleanliness" type="number" min="1" max="10" placeholder="1-10" name="cleanliness">
-					<br>
-					<textarea placeholder="Comments / Improvement Suggestions..." maxlength="280" name="comments"></textarea>
-					<br>
-					<p id="charLeftP">Characters left: <i><span id="cLeft">280</span></i></p>
-					<input type="submit">
-				</fieldset>
-			</form>
+			<input id="empId" type="number" min="1" placeholder="Employee ID">
+			<br>
+			<input id="empPass" type="password" placeholder="Password">
+			<div id="loginDiv">
+				<p id="empName"></p>
+				<div id="afterName">
+					<label for="prodName">Check Stock of: </label>
+					<input id="prodName" type="text" placeholder="Product Name">
+					<p id="prodStock"></p>
+					<a>Change Password</a>
+					<div id="passChangeDiv">
+						<input id="newPass" type="password" placeholder="New Password">
+						<br>
+						<button>Update</button>
+					</div>
+				</div>
+			</div>
 		</main>
 	</div>
 
@@ -70,6 +63,6 @@
 		<p class="center">Copyright &copy; 2020 Salman</p>
 	</footer>
 
-	<script src="js/textAreaCount.js"></script>
+	<script src="js/forStaff.js"></script>
 </body>
 </html>

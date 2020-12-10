@@ -29,7 +29,7 @@ body {
 	background-size: 100%;
 }
 
-#rateUsBody {
+#rateUsBody, #ratingSubmitBody {
 	background: url(../images/background4.jpg) repeat;
 	background-attachment: fixed;
 	background-size: 100%;
@@ -37,6 +37,12 @@ body {
 
 #aboutBody {
 	background: url(../images/background5.jpg) repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+#stockInfoBody {
+	background: url(../images/background6.jpg) repeat;
 	background-attachment: fixed;
 	background-size: 100%;
 }
@@ -63,7 +69,7 @@ header ul.nav a:hover, ul.nav a:link {
 	background-color: rgba(0,0,0,0);
 }
 
-#aboveFooter {
+.aboveFooter {
 	min-height: calc(100vh - 51px);
 }
 
@@ -77,7 +83,7 @@ footer p {
 	margin: 0px;
 }
 
-h2, dt, .deal, legend, thead th, input[type="number"], input[type="submit"] {
+h2, dt, .deal, legend, thead th, #rateUsBody input[type="number"], input[type="submit"], button {
 	color: firebrick;
 }
 
@@ -89,11 +95,11 @@ h2 {
 	font-size: 36px;
 }
 
-#indexBody h3, label, input[type="submit"] {
+#indexBody h3, #rateUsBody label, input[type="submit"] {
 	font-size: 24px;
 }
 
-nav, p, main a, tbody, input, textarea {
+nav, p, main a, tbody, input, textarea, #stockInfoBody label, button {
 	font-size: 22px;
 }
 
@@ -101,21 +107,31 @@ dt, .deal, thead th, legend, label, input[type="submit"] {
 	font-weight: bold;
 }
 
-a {
-	outline-color: goldenrod;
-	transition: color 0.3s;
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
 }
 
-a:link, a:visited {
-	text-decoration: none;
+input[type="submit"]:hover, a:hover {
+	cursor: pointer;
+}
+
+a, a:link, a:visited {
 	color: indianred;
 }
 
-a:hover, input[type="submit"]:hover {
+a, #loginDiv button {
+	transition: color 0.3s;
+}
+
+a {
+	outline-color: goldenrod;
+}
+
+a:hover, input[type="submit"]:hover, #loginDiv button:hover {
 	color: goldenrod;
 }
 
-a:active, input[type="submit"]:active {
+a:active, input[type="submit"]:active, #loginDiv button:active {
 	color: darkgoldenrod;
 }
 
@@ -168,7 +184,16 @@ section#aboutUs p {
 	text-align: right;
 }
 
+#indexBody iframe {
+	border: 0;
+	width: 100%;
+	border-radius: 15px;
+}
+
 dl {
+	column-count: auto;
+	column-width: 350px;
+	column-gap: 15px;
 	margin: 0px;
 }
 
@@ -193,11 +218,7 @@ div.product {
 	break-inside: avoid;
 	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 	padding: 5px;
-	transition: box-shadow 0.3s;
-}
-
-div.product:hover {
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+	margin-bottom: 15px;
 }
 
 div.product a {
@@ -267,7 +288,7 @@ thead th:first-child {
 	border-bottom: none;
 }
 
-input, textarea {
+input, textarea, button {
 	background-color: transparent;
 	margin-bottom: 10px;
 }
@@ -285,21 +306,17 @@ legend {
 	padding: 0px 5px 0px 5px; 
 }
 
-input[type="number"] {
-	border: solid 1px transparent;
-	padding: 5px 8px;
-	width: 85px;
+input {
+	margin-bottom: 10px;
 	text-align: center;
 	border-radius: 10px;
-	transition: border 0.3s;
+	transition: border 0.2s;
 }
 
-input[type="number"]:hover {
-	border: solid 1px darkgrey;
-}
-
-input[type="number"]:focus {
-	border: solid 1px goldenrod;
+#rateUsBody input[type="number"] {
+	border: solid 1px transparent;
+	width: 85px;
+	padding: 5px 8px;
 }
 
 textarea {
@@ -307,27 +324,43 @@ textarea {
 	padding: 5px 15px;
 	height: 100px;
 	min-height: 100px;
-	max-height: 500px;
+	max-height: 200px;
 	resize: vertical;
 	margin-top: 5px;
+	margin-bottom: 0px;
 	transition: width 0.2s, border 0.2s;
+	border: solid 1px lightgrey;
 }
 
-textarea:focus {
+#rateUsBody input[type="number"]:hover, textarea:hover, #stockInfoBody input:hover {
+	border: solid 1px darkgrey;
+}
+
+#rateUsBody input[type="number"]:focus, textarea:focus, #stockInfoBody input:focus {
 	border: solid 1px goldenrod;
+}
+
+#charLeftP {
+	font-size: 18px;
+}
+
+#cLeft {
+	color: grey;
+}
+
+input[type="submit"], button {
+	border: solid 1px transparent;
+	margin-bottom: 0px;
 }
 
 input[type="submit"] {
 	border-radius: 15px;
-	border: solid 1px transparent;
-	margin-bottom: 0px;
 	margin-top: 5px;
 	text-align: center;
 	transition:  color 0.3s, border 0.3s;
 }
 
 input[type="submit"]:hover {
-	cursor: pointer;
 	border: solid 1px darkgoldenrod;
 }
 
@@ -337,12 +370,59 @@ img#myPic {
 	margin-bottom: 20px;
 }
 
-#WMUVid {
-	border: none;
-	border-radius: 15px;
+#soundTrack {
+	max-width: 100%;
+	width: 700px;
+	overflow: hidden;
 }
 
-input[type="number"]:hover, input[type="number"]:focus, textarea:focus, input[type="submit"], audio, #WMUVid {
+#WMUVid, #soundTrack {
+	border: none;
+}
+
+#stockInfoBody input {
+	width: 180px;
+	padding: 5px 10px;
+	border: solid 1px lightgrey;
+}
+
+#stockInfoBody input[type="number"]::-webkit-outer-spin-button, #stockInfoBody input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#loginDiv, #prodStock, #passChangeDiv {
+	display: none;
+}
+
+p#empName {
+	color: firebrick; 
+	margin-top: 10px; 
+	margin-left: 30px;
+}
+
+#loginDiv #afterName {
+	margin-left: 60px
+}
+
+p#prodStock {
+	margin-left: 30px;
+}
+
+input#prodName, #passChangeDiv {
+	margin-left: 8px;
+}
+
+#loginDiv a {
+	display: block;
+	margin: 20px 0px 6px 0px;
+}
+
+#loginDiv button {
+	margin-top: 0px;
+}
+
+input, input:hover, input:focus, textarea:focus, audio, #WMUVid, button {
  	outline: none;
  }
 
