@@ -83,7 +83,7 @@
 					<h2>Contact Us</h2>
 					<div>
 						<h3>Phone: </h3>
-						<a class="inLine" href="tel:+12690000000" title="call">+12690000000</a>
+						<a class="inLine" href="tel:+12690000000" title="call">(269) 000-0000</a>
 					</div>
 					<div>
 						<h3>Email: </h3>
