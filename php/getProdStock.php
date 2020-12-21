@@ -14,8 +14,8 @@
 
 	$statement->execute(array($_REQUEST['prodName']));
 
-	if ($emp = $statement->fetch()) {
-		echo $emp['Stock Status'];
+	if ($prod = $statement->fetch()) {
+		echo $prod['Stock Status'];
 	} else {
 		echo "";
 	}
